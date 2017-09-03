@@ -3,6 +3,7 @@ import {ActionSheetController, IonicPage, NavController, NavParams} from 'ionic-
 import {AddShoppingPage} from "../add-shopping/add-shopping";
 import {AngularFireDatabase, FirebaseListObservable} from "angularfire2/database";
 import {ShoppingItem} from "../../models/shopping-item/shopping-item";
+import {EditShoppingItemPage} from "../edit-shopping-item/edit-shopping-item";
 
 /**
  * Generated class for the ShoppingListPage page.
@@ -36,7 +37,7 @@ export class ShoppingListPage {
         {
           text: 'Edit',
           handler: () => {
-
+            this.navCtrl.push(EditShoppingItemPage, {shoppingItemId: shoppingItem.$key});
           }
         },
         {
