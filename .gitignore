@@ -12,6 +12,7 @@ log.txt
 .vscode/
 npm-debug.log*
 
+.sourcemaps/
 .idea/
 .sass-cache/
 .tmp/
@@ -32,3 +33,4 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+firebase.credentials.ts
